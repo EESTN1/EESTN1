@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscripción</title>
+<link rel="icon" type="image/png" href="img/juan.png">
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h1>INSCRIPCIÓN</h1>
+
+<form id="form">
+
+<div class="form-group">
+<input id="DNI" type="text" placeholder="D.N.I.">
+</div>
+
+<div class="form-group">
+<input id="Apellido" type="text" placeholder="Apellido">
+</div>
+
+<div class="form-group">
+<input id="Nombre" type="text" placeholder="Nombre">
+</div>
+
+<div class="form-group">
+<input id="email" type="email" placeholder="Email">
+</div>
+
+<div class="form-group">
+<input id="Telefono" type="text" placeholder="Telefono">
+</div>
+
+<div class="form-group">
+<input id="localidad" type="text" placeholder="Localidad">
+</div>
+
+<div class="form-group">
+    <select id="Provincia" required>
+                <option value="" disabled selected>Provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="CABA">CABA</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+</div>
+
+<div class="form-group">
+<input id="fecha-nacimiento" type="date">
+</div>
+
+<div class="row">
+<span>Sexo:</span>
+
+<label>
+<input id="masculino" type="radio" name="sexo">
+Masculino
+</label>
+
+<label>
+<input id="femenino" type="radio" name="sexo">
+Femenino
+</label>
+</div>
+
+<div class="row">
+<span>Distancia:</span>
+
+<div class="talles">
+
+<label>
+<input id="4km" type="radio" name="Distancia">
+4KM
+</label>
+
+<label>
+<input id="8km" type="radio" name="Distancia">
+8KM
+</label>
+
+</div>
+</div>
+
+<button type="submit">Enviar</button>
+<!-- <button type="button"> <a href="/pago/p1.html">Ir a pagar</a></button> -->
+
+</form>
+
+</div>
+
+
+
+<script src="form.js" type="module"></script>
+</body>
+</html>

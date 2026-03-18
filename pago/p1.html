@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pagos</title>
+<link rel="stylesheet" href="p1.css">
+<link rel="icon" type="image/png" href="imgpago/juan.png">
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>PAGOS</h1>
+<p class="sub"><b>Transferir el monto segun la distancia a correr</b></p>
+
+<form>
+
+<label class="option">
+<span class="distance">Carrera 8KM</span>
+<span class="price">$25.000</span>
+</label>
+
+<label class="option">
+<span class="distance">Correcaminata 4KM</span>
+<span class="price">$15.000</span>
+</label>
+
+
+<p class="alias">Alias:
+        <b style="cursor:pointer; color:rgb(86, 14, 32);" onclick="copiarAlPortapapeles('MI.ALIAS.EJEMPLO', this)">
+        MI.ALIAS.EJEMPLO
+        </b>
+    </p>
+    <p  class="alias">CVU: 
+        <b style="cursor:pointer; color:rgb(90, 15, 15);" onclick="copiarAlPortapapeles('0000003100012345678901', this)">
+        0000003100012345678901
+        </b>
+    </p>
+    <p  class="alias">envía el comprobante a <a href="https://wa.me/2475413188">2475413188</a></p>
+
+    <script>
+        function copiarAlPortapapeles(texto, elemento) {
+    navigator.clipboard.writeText(texto).then(() => {
+        // Guardamos el texto original para restaurarlo después
+        const textoOriginal = elemento.innerText;
+        
+        // Cambio visual temporal para feedback
+        elemento.innerText = "¡Copiado!";
+        elemento.style.color = "green";
+
+        setTimeout(() => {
+            elemento.innerText = textoOriginal;
+            elemento.style.color = "blue";
+        }, 1000);
+    }).catch(err => {
+        console.error('Error al copiar: ', err);
+    });
+}
+    </script>
+
+
+</form>
+
+</div>
+
+</body>
+</html>
