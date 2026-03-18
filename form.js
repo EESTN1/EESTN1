@@ -56,7 +56,7 @@ document.getElementById("form").addEventListener("submit", async function(e){
         });
 
         // Redirigir a la página de pago
-        window.location.href = "/pago/p1.html";
+        window.location.href = "/EESTN1/pago/p1.html";
 
     } catch (error) {
         alert("Error al enviar la inscripción ❌");
