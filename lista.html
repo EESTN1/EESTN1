@@ -10,6 +10,15 @@
 
 <body>
 
+<script>
+const password = prompt("ingresa la contraseña:   ");
+
+if (password !== "lospibesdeinfo") {
+    alert ("contraseña incorrecta");
+
+    window.location.href = "/";}
+</script>
+  
 <h2>Buscar corredor</h2>
 <input type="text" id="buscador" placeholder="Buscar por nombre...">
 <ul id="listaCorredores"></ul>
