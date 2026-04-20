@@ -31,7 +31,8 @@ document.getElementById("form").addEventListener("submit", async function(e){
     let provincia = document.getElementById("Provincia").value;
     let fecha = document.getElementById("fecha-nacimiento").value;
 
-    let talle = document.querySelector('input[name="talle"]:checked')?.id;
+  // Obtener valores de radio buttons (agregamos el || null para evitar el undefined)
+    let talle = document.querySelector('input[name="talle"]:checked')?.id || null;
     let distancia = document.querySelector('input[name="Distancia"]:checked')?.id;
 
     // Validación básica
