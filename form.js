@@ -36,7 +36,7 @@ document.getElementById("form").addEventListener("submit", async function(e){
     let distancia = document.querySelector('input[name="Distancia"]:checked')?.id;
 
     // Validación básica
-    if(!DNI || !apellido || !nombre || !email){
+    if(!DNI || !apellido || !nombre || !talle || !email){
         alert("Por favor completa todos los campos obligatorios");
         return;
     }
