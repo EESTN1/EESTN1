@@ -31,7 +31,7 @@ document.getElementById("form").addEventListener("submit", async function(e){
     let provincia = document.getElementById("Provincia").value;
     let fecha = document.getElementById("fecha-nacimiento").value;
 
-    let sexo = document.querySelector('input[name="sexo"]:checked')?.id;
+    let talle = document.querySelector('input[name="talle"]:checked')?.id;
     let distancia = document.querySelector('input[name="Distancia"]:checked')?.id;
 
     // Validación básica
@@ -51,7 +51,7 @@ document.getElementById("form").addEventListener("submit", async function(e){
             localidad,
             provincia,
             fechaNacimiento: fecha,
-            sexo,
+            talle,
             distancia
         });
 
