@@ -28,7 +28,7 @@ function crearFilaCorredor(id, datos) {
     const li = document.createElement("li");
     
     const texto = document.createElement("span");
-    texto.textContent = `${datos.nombre} ${datos.apellido} | DNI: ${datos.DNI} | [Talle: ${datos.talle}]`;
+    texto.textContent = `${datos.nombre} ${datos.apellido} | DNI: ${datos.DNI} | [Talle: ${datos.talle || 'S/N'}]`;
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
