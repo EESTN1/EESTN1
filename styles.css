@@ -221,7 +221,7 @@ cursor:pointer;
 }
 
 .carrusel{
-    margin: 100px auto;
+    margin: 30px auto;
     width: 100%;
     display: flex;
     overflow-x: auto;
