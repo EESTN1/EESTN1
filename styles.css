@@ -242,6 +242,15 @@ cursor:pointer;
     display: none;
 }
 
+.copfija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0; /* espacio arriba y abajo */
+}
+
+
 .grupo{
     display: flex;
     align-items: center;
