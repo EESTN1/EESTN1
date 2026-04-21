@@ -232,6 +232,7 @@ cursor:pointer;
         black 90%,
         transparent
     );
+    position: relative;
 }
 
 .carrusel img{
