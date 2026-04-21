@@ -238,43 +238,6 @@ cursor:pointer;
     width: 20vw;
 }
 
-/* contenedor carrusel */
-.carrusel{
-    position: relative;
-    overflow: hidden;
-}
-
-/* LOGO FIJO */
-.cooperativa-fija{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.4);
-
-    z-index: 20;
-
-    background: rgba(255,255,255,0.9);
-    padding: 15px;
-    border-radius: 20px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-
-    pointer-events: none;
-}
-
-.cooperativa-fija img{
-    width: 110px;
-}
-
-.cooperativa-fija{
-    animation: flotar 3s ease-in-out infinite;
-}
-
-@keyframes flotar{
-    0%,100%{ transform: translate(-50%, -50%) scale(1.4); }
-    50%{ transform: translate(-50%, -55%) scale(1.45); }
-}
-
 .carrusel::-webkit-scrollbar{
     display: none;
 }
