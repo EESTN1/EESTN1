@@ -430,6 +430,11 @@ border:none;
   border: 0;
 }
 
+.wrapper a{
+    color: inherit;
+    text-decoration: none;
+}
+
 @keyframes mover{
     from {translate: 0;}
     to {translate: -100%;}
