@@ -95,42 +95,27 @@ h3 { padding-top: 15px;}
 
 
 /* HERO */
-
 .hero{
-height: calc(100vh - 50px);
-padding-top: 12vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
+    width: 100%;
+    display: block;
 }
 
+/* IMAGEN HERO */
 .hero img{
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    max-height: calc(100vh);
-    object-fit: contain;
-    transition: 0.3s ease;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.hero img:hover{
-    opacity: 0.9;
-}
-
-
+/* TEXTO (por si agregás después) */
 .hero h1{
-font-size:60px;
-margin-bottom:10px;
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:20px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 /* SECCIONES */
